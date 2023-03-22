@@ -1849,6 +1849,15 @@ main {
 }
 
 .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   min-height: 100vh;
   padding-top: 226px;
@@ -1935,6 +1944,9 @@ main {
   line-height: 130px;
   text-transform: uppercase;
   color: #FFFFFF;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 
 @supports (font-size: clamp( 4.375rem , 1.7395059435rem  +  5.4977711738vw , 6.6875rem )) {
@@ -4206,7 +4218,7 @@ main {
     padding: 15px 20px;
     position: absolute;
     z-index: 2;
-    left: -100%;
+    left: -100vw;
     background: #282828;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
