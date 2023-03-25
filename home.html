@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230325171419">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230325192859">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,39 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
+
+			<div id="fix" class="fix-popup"></div>
+
+			<div id="popup" class="popup ">
+				<div class="popup__wrap">
+					<a class="popup__area-bg" href="#fix"></a>
+					<div class="popup__container ">
+						<div class="popup__content ">
+							<div class="popup__close-btn-wrap"><a class="button-close-popup" href="#fix"></a></div>
+							<div data-aos="fade-left" class="main-form ">
+
+								<div class="popup__form">
+									<form class="form form-contacts" action="get">
+
+										<div data-aos="fade-up" class="form__inputs">
+											<div class="popup__form-title">Замовити консультацію</div>
+											<p class="popup__form-text">Ми надамо відповідь на всі питання щодо проєкту вашої мрії </p>
+											<input data-aos="fade-left" class="input" type="text" placeholder="Ім’я">
+											<input data-aos="fade-right" class="input" type="text" placeholder="+380(ХХ)ХХХ-ХХ-ХХ">
+
+											<button data-aos="fade-left" type="submit" class="button-form">НАДІСЛАТИ ДАНІ</button>
+										</div>
+
+									</form>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
 			<div class="header__container">
 				<div class="header__content">
 					<div class="header__menu menu">
@@ -24,7 +57,7 @@
 								<li class="menu__item active "><a href="#" class="menu__link ">ПРО НАС</a></li>
 
 								<li data-da=".header__content , 991.98" class="menu__item products-btn">
-									<a href="#" class="menu__link ">ПРОДУКЦІЯ</a>
+									<a class="menu__link ">ПРОДУКЦІЯ</a>
 									<div class="dropdown">
 										<ul class="dropdown__list">
 											<li class="dropdown__item"> <a href="#" class="dropdown__link active">Гвинтові сходи</a></li>
@@ -40,12 +73,12 @@
 
 								</li>
 								<li class="menu__item"><a href="#" class="menu__link">ПЕРЕВАГИ</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">КОНТАКТИ</a></li>
+								<li class="menu__item"><a href="contacts.html" class="menu__link">КОНТАКТИ</a></li>
 							</ul>
 						</nav>
 					</div>
 					<div class="header__block-logo">
-						<a class="header__logo-ibg_contain">
+						<a href="index.html" class="header__logo-ibg_contain">
 							<img src="img/header/logo.svg" alt="logo">
 						</a>
 					</div>
@@ -82,7 +115,7 @@
 							<h1 class="first__title">Style Pro</h1>
 							<p class="first__title-text">Вироби з дерева благородних порід</p>
 							<p class="first__text">Меблі, двері, елементи інтер’єру по <br> індивідуальному замовленню</p>
-							<a class="first__button" href="#">ЗАМОВИТИ КОНСУЛЬТАЦІЮ</a>
+							<a class="first__button" href="#popup">ЗАМОВИТИ КОНСУЛЬТАЦІЮ</a>
 						</div>
 						<div class="first__block-wrap">
 							<ul class="first__items">
@@ -831,7 +864,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230325171419"></script>
+	<script src="js/app.min.js?_v=20230325192859"></script>
 </body>
 
 </html>
