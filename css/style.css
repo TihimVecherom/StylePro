@@ -2214,6 +2214,10 @@ main {
   border-right: 1px solid #343434;
   border-bottom: 1px solid #343434;
   min-height: 331px;
+  -webkit-transition: all 0.3s !important;
+  -o-transition: all 0.3s !important;
+  transition: all 0.3s !important;
+  background-color: rgba(255, 0, 0, 0);
 }
 
 @supports (min-height: clamp( 11.375rem , -1.6410586416rem  +  27.1174950214vw , 19.375rem )) {
@@ -2238,6 +2242,10 @@ main {
   .categories__item {
     gap: calc(1.625rem + 0.875 * (100vw - 47.99875rem) / 29.50125);
   }
+}
+
+.categories__item:hover {
+  background-color: rgba(0, 0, 0, 0.274);
 }
 
 @supports (width: clamp( 4.9375rem , 1.3784214652rem  +  7.4149400449vw , 7.125rem )) {
@@ -3369,15 +3377,28 @@ main {
 
 .about-us.dark-grey {
   padding-top: 40px;
-  padding-bottom: 0px;
+  padding-bottom: 70px;
 }
 
 .dark-grey {
   background-color: #282828;
 }
 
+.about-us.dark-grey .about-us__content {
+  gap: 0px;
+}
+
+.gap {
+  gap: 40px !important;
+}
+
 .about-us.dark-grey p {
   color: white;
+}
+
+.about-us__title.white {
+  color: white;
+  margin-bottom: 20px;
 }
 
 .about-us.dark-grey span {
@@ -3386,6 +3407,13 @@ main {
 
 .text-about-us {
   position: relative;
+}
+
+.box-delivery {
+  padding-top: 150px !important;
+  padding-bottom: 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.295);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.295);
 }
 
 .text-about-us-line {
@@ -5318,6 +5346,10 @@ main {
         grid-column-start: 2;
     -ms-grid-column-span: 1;
     grid-column-end: 3;
+  }
+
+  .about-us.dark-grey .about-us__content {
+    gap: 40px;
   }
 
   .text-about-us-line {
